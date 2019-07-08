@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Track Calories | Track Meals</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Nav Bar -->
+  <nav>
+    <div class="nav-wrapper blue">
+      <div class="container">
+        <a href="#" class="brand-logo center">Track Calorie</a>
+        <ul class="right">
+          <li>
+            <a href="#" class="clear-btn btn blue lighten-3" tabindex="6">Clear All</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br />
+<!-- Form Container -->
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Meal</span>
+        <form class="col">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" id="item-name" placeholder="Add Item" tabindex="1">
+              <label for="item-name">Meal</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="number" id="item-calories" placeholder="Add Calories" tabindex="2">
+              <label for="item-calories">Calories</label>
+            </div>
+            <button class="btn add-btn blue darken-3" tabindex="3"><i class="fa fa-plus">Add</i></button>
+            <button class="btn update-btn orange" tabindex="3"><i class="fa fa-pencil-square-o">Update</i></button>
+            <button class="btn delete-btn red" tabindex="4"><i class="fa fa-remove">Delete</i></button>
+            <button class="btn back-btn grey pull-right" tabindex="5"><i class="fa fa-chevron-circle-left">Back</i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Calorie Container -->
+    <div class="container">
+      <h3 class="center-align">Total Calories:<span class="total-calories">0</span></h3>
+      <!-- Item lists -->
+      <ul id="list-items" class="collection">
+      </ul>
+    </div>
+  </div>
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="controllers/storage.js"></script>
+  <script src="controllers/Item.js"></script>
+  <script src="controllers/UI.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>
